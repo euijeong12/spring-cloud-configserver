@@ -4,10 +4,6 @@ server:
 message:
   act: "Hello billing service"
 
-management:
-  security:
-    enabled: false
-
 spring:
   rabbitmq:
     host: localhost
