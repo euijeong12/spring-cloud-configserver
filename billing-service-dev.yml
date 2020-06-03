@@ -2,7 +2,7 @@ server:
   port: 8090
 
 message:
-  act: "Hello billing service"
+  act: "Hi billing service"
 
 spring:
   rabbitmq:
