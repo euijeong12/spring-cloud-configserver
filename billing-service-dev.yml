@@ -1,6 +1,6 @@
 application:
   service:
-    name: eurekaclient
+    name: billing-service
 management:
   security:
     enabled: false
