@@ -1,6 +1,6 @@
 application:
   service:
-    name: eurekaclient
+    name: billing-service
 management:
   security:
     enabled: false
@@ -17,4 +17,5 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8889/eureka/
+      defaultZone: http://${EUREKA_HOSTNAME:localhost}:${EUREKA_PORT:8889}/eureka/
+    registerWithEureka: false
