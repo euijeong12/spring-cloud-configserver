@@ -3,12 +3,3 @@ spring:
     name: gateway-mservice
 server:
   port: 8070
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8889/eureka/
-zuul:
-  routes:
-    search-apigateway:
-      serviceId: eurekaclient
-      path: /api/*
