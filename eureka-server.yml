@@ -1,6 +1,11 @@
 spring:
   application:
-    name: eureka-server1
+    name: eureka-server
+  zipkin:
+    baseUrl: http://${ZIPKIN_HOSTNAME:localhost}:${ZIPKIN_PORT:9411}/
+  sleuth:
+    sampler:
+      probability: 1
 eureka:  
   instance:
     hostname: ${EUREKA_HOSTNAME:localhost}
