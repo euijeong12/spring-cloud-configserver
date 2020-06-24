@@ -1,6 +1,9 @@
 application:
   service:
     name: billing-service
+data:
+  rest:
+    base-path: /api
 management:
   security:
     enabled: false
